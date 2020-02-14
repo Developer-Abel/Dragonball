@@ -1,0 +1,25 @@
+<div class="row ">
+    <div class="col-md-4 mb-4" *ngFor="let guerrero of guerreros; let i = index">
+        <div class="card h-100">
+            <img [src]="guerrero.img" class=" card-img-top" alt="...">
+
+            <div class="card-body">
+                <h5 class="card-title">{{guerrero.nombre}}</h5>
+                <p class="card-text">{{guerrero.bio}}</p>
+            </div>
+            <div class="boton">
+                <button (click)="verMas(i)" class="btn btn-block btn-primary">Ver mas</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="row">
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsa aliquam delectus non molestias quas sunt architecto iusto, laborum ad, fuga incidunt aliquid aut quo, rem consequatur maxime obcaecati accusamus! Officia eveniet ipsam placeat
+            maiores cumque? Suscipit, laborum odio fugiat, officia iure optio voluptatibus sint animi, provident assumenda tempore consequatur minus quod voluptates aliquam totam dignissimos soluta vero tenetur cum? Omnis, amet aliquid? Ipsum voluptatum
+            rem, corrupti praesentium veniam eligendi ex enim ea eaque numquam molestias odio quam vitae fugit exercitationem at totam magni saepe. Dolorem non nobis maiores praesentium. Porro commodi consequatur facilis, voluptatum suscipit placeat veniam
+            accusamus unde necessitatibus id animi tempora eveniet! Magnam molestiae suscipit mollitia aliquid distinctio harum dicta temporibus vero. Ipsam cum itaque numquam obcaecati.</p>
+    </div>
+</div>
